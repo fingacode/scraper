@@ -1,7 +1,7 @@
 const puppeteer = require("puppeteer");
-const tokenCount = 1000;
+const tokenCount = 432;
 const projectUrl =
-  "https://generator.artblocks.io/0xa7d8d9ef8d8ce8992df33d8b8cf4aebabd5bd270/13000";
+  "https://generator.artblocks.io/0x0a1bbd57033f57e7b6743621b79fcb9eb2ce3676/12000";
 
 (async () => {
   const browser = await puppeteer.launch();
@@ -9,7 +9,7 @@ const projectUrl =
   // Render the window at this size, this will the exported image size
   await page.setViewport({
     width: 1000,
-    height: 1000,
+    height: 1240,
   });
 
   for (let index = 0; index < tokenCount; index++) {
